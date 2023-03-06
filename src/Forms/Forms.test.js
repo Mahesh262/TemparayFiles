@@ -31,5 +31,6 @@ describe("Form component", () => {
     const submitButton = screen.getByText("Submit");
     fireEvent.click(submitButton);
     // You can add an assertion here to verify the form submission
+    expect(submitButton).toBeDefined();
   });
 });
